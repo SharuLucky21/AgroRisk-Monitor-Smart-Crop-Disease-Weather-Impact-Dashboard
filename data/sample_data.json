@@ -1,0 +1,107 @@
+[
+  {
+    "region": "Andhra Pradesh",
+    "temperature": 36.5,
+    "humidity": 78,
+    "crop": "Rice",
+    "disease_risk": "Moderate"
+  },
+  {
+    "region": "Punjab",
+    "temperature": 32.0,
+    "humidity": 55,
+    "crop": "Wheat",
+    "disease_risk": "Low"
+  },
+  {
+    "region": "Karnataka",
+    "temperature": 30.0,
+    "humidity": 65,
+    "crop": "Maize",
+    "disease_risk": "High"
+  },
+  {
+    "region": "Gujarat",
+    "temperature": 35.0,
+    "humidity": 50,
+    "crop": "Groundnut",
+    "disease_risk": "Low"
+  },
+  {
+    "region": "West Bengal",
+    "temperature": 29.5,
+    "humidity": 80,
+    "crop": "Rice",
+    "disease_risk": "Moderate"
+  },
+  {
+    "region": "Uttar Pradesh",
+    "temperature": 31.0,
+    "humidity": 75,
+    "crop": "Sugarcane",
+    "disease_risk": "High"
+  },
+  {
+    "region": "Bihar",
+    "temperature": 28.0,
+    "humidity": 85,
+    "crop": "Paddy",
+    "disease_risk": "Moderate"
+  },
+  {
+    "region": "Rajasthan",
+    "temperature": 38.0,
+    "humidity": 40,
+    "crop": "Barley",
+    "disease_risk": "Low"
+  },
+  {
+    "region": "Kerala",
+    "temperature": 30.5,
+    "humidity": 90,
+    "crop": "Rubber",
+    "disease_risk": "High"
+  },
+  {
+    "region": "Odisha",
+    "temperature": 27.5,
+    "humidity": 65,
+    "crop": "Paddy",
+    "disease_risk": "Moderate"
+  },
+  {
+    "region": "Haryana",
+    "temperature": 33.0,
+    "humidity": 60,
+    "crop": "Mustard",
+    "disease_risk": "Low"
+  },
+  {
+    "region": "Telangana",
+    "temperature": 34.5,
+    "humidity": 55,
+    "crop": "Cotton",
+    "disease_risk": "High"
+  },
+  {
+    "region": "Madhya Pradesh",
+    "temperature": 31.5,
+    "humidity": 70,
+    "crop": "Soybean",
+    "disease_risk": "Moderate"
+  },
+  {
+    "region": "Maharashtra",
+    "temperature": 34.0,
+    "humidity": 60,
+    "crop": "Cotton",
+    "disease_risk": "High"
+  },
+  {
+    "region": "Tamil Nadu",
+    "temperature": 33.5,
+    "humidity": 70,
+    "crop": "Sugarcane",
+    "disease_risk": "Moderate"
+  }
+]

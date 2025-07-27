@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AgroRisk Monitor Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">AgroRisk Monitor</span>
+  </nav>
+
+  <div class="container mt-4">
+    <h3>Enter Weather & Crop Risk Info</h3>
+    <form action="/submit" method="POST" class="mb-5">
+      <div class="form-row">
+        <div class="form-group col-md-4">
+          <input type="text" name="region" class="form-control" placeholder="Region" required>
+        </div>
+        <div class="form-group col-md-2">
+          <input type="number" step="0.1" name="temperature" class="form-control" placeholder="Temperature" required>
+        </div>
+        <div class="form-group col-md-2">
+          <input type="number" step="0.1" name="humidity" class="form-control" placeholder="Humidity" required>
+        </div>
+        <div class="form-group col-md-2">
+          <input type="text" name="crop" class="form-control" placeholder="Crop" required>
+        </div>
+        <div class="form-group col-md-2">
+          <select name="disease_risk" class="form-control" required>
+            <option value="">Risk Level</option>
+            <option>Low</option>
+            <option>Moderate</option>
+            <option>High</option>
+          </select>
+        </div>
+      </div>
+      <button class="btn btn-success" type="submit">Submit</button>
+    </form>
+
+    <h4>Collected Data</h4>
+    <table class="table table-striped table-bordered">
+      <thead class="thead-dark">
+        <tr>
+          <th>Region</th>
+          <th>Temperature (°C)</th>
+          <th>Humidity (%)</th>
+          <th>Crop</th>
+          <th>Disease Risk</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for entry in data %}
+        <tr>
+          <td>{{ entry.region }}</td>
+          <td>{{ entry.temperature }}</td>
+          <td>{{ entry.humidity }}</td>
+          <td>{{ entry.crop }}</td>
+          <td>{{ entry.disease_risk }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <hr>
+    <h4>Tableau Dashboard</h4>
+    <!-- Replace YOUR_VIEW_URL with actual Tableau public link -->
+    <div class="tableauPlaceholder" id="viz1688">
+      <object class="tableauViz" width="100%" height="700" style="display:none;">
+        <param name="host_url" value="https://public.tableau.com/views/agriwork/Sheet2?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="YOUR_VIEW_URL" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+      </object>
+    </div>
+  </div>
+
+  <script src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+</body>
+</html>

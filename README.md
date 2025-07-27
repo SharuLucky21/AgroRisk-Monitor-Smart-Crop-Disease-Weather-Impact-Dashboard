@@ -34,19 +34,6 @@ agro-risk-monitor/
 └── README.md # Project overview (this file)
 
 
----
-
-## 🧪 Sample JSON Data
-
-```json
-{
-  "region": "Andhra Pradesh",
-  "temperature": 36.5,
-  "humidity": 78,
-  "crop": "Rice",
-  "disease_risk": "Moderate"
-}
-
 📊 Tableau Integration
 Tableau Public Dashboard is embedded in index.html via <iframe>.
 

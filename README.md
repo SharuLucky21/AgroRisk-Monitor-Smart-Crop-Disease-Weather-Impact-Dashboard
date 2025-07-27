@@ -1,0 +1,2 @@
+# AgroRisk-Monitor-Smart-Crop-Disease-Weather-Impact-Dashboard
+This project aims to provide real-time insights into crop disease risks and weather conditions across various Indian regions. It uses a JSON file to simulate environmental data (temperature, humidity, crop, disease risk) and visualizes this data using Tableau, while Flask serves the backend to handle requests and serve the frontend dashboard.

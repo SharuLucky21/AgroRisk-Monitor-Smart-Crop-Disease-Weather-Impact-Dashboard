@@ -35,12 +35,14 @@ agro-risk-monitor/
 
 
 📊 Tableau Integration
+
 Tableau Public Dashboard is embedded in index.html via <iframe>.
 
 Make sure the dashboard is published and publicly accessible.
 
 
-🤖 Tech Stack
+#🤖 Tech Stack
+
 Python 3.x
 
 Flask
@@ -51,7 +53,7 @@ Tableau Public
 
 JSON
 
-🧠 Use Case
+#🧠 Use Case
 This project helps:
 
 Farmers identify crop disease risk
@@ -60,7 +62,8 @@ Agri-researchers visualize climate-crop correlation
 
 Governments monitor agro-vulnerable zones
 
-🙌 Credits
+#🙌 Credits
 Created by S N SHARANYA LAKSHMI
+
 Inspired by real-world agro-climatic challenges.
 
